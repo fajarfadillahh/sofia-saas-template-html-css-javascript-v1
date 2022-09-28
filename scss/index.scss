@@ -1,0 +1,128 @@
+// ===== FONT GOOGLE =====
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;800&display=swap");
+
+// ===== VARIABLE CSS CLASS =====
+:root {
+  // header height
+  --header-height: 6rem;
+
+  // color palette
+  --container-color: #f4f7ff;
+  --title-color: #081131;
+  --text-color: #7e8bb6;
+  --blue-color: #0059f7;
+  --white-color: #ffffff;
+
+  // font body
+  --font-body: "Sora", sans-serif;
+
+  // font weight
+  --font-reguler: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 800;
+
+  // margin
+  --margin-0-5: 0.5rem;
+  --margin-1: 1rem;
+  --margin-1-5: 1.5rem;
+  --margin-2: 2rem;
+  --margin-2-5: 2.5rem;
+  --margin-3: 3rem;
+  --margin-3-5: 3.5rem;
+  --margin-4: 4rem;
+
+  // z-index
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  // transition
+  --transition-300: 0.3s;
+
+  // line-height
+  --leading-title: 155%;
+  --leading-text: 180%;
+}
+
+// ===== RESET & BASE =====
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--font-reguler);
+  background-color: var(--container-color);
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+button,
+input {
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// ===== REUSABLE CSS CLASS =====
+.section {
+  padding: 8rem 0 4rem;
+
+  &-title {
+    font-size: 24px;
+    font-weight: var(--font-bold);
+    text-transform: capitalize;
+    color: var(--title-color);
+    margin-bottom: var(--margin-1);
+    line-height: var(--leading-title);
+  }
+
+  &-text {
+    font-size: 15px;
+    color: var(--text-color);
+    line-height: var(--leading-text);
+  }
+
+  &-bottom {
+    margin-bottom: var(--margin-2);
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--blue-color);
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: var(--font-medium);
+  color: var(--white-color);
+}
+
+.container {
+  max-width: 1024px;
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+}
+
+.main {
+  overflow: hidden; // For animation
+}
