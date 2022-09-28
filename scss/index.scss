@@ -229,3 +229,19 @@ img {
     font-size: 32px;
   }
 }
+
+// ===== PARTNER SECTION =====
+.partner {
+  padding-bottom: 4rem;
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 3.5rem 2rem;
+  }
+
+  &__img {
+    width: 120px;
+  }
+}
