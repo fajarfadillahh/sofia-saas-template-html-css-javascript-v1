@@ -205,7 +205,7 @@ img {
   &__link {
     font-size: 15px;
     font-weight: var(--font-medium);
-    color: var(--text-color);
+    color: var(--title-color);
   }
 
   &__button {
@@ -339,10 +339,6 @@ img {
   .header {
     &__list {
       gap: 3rem;
-    }
-
-    &__link:hover {
-      color: var(--white-color);
     }
   }
 
