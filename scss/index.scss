@@ -61,6 +61,17 @@ body {
   font-family: var(--font-body);
   font-weight: var(--font-reguler);
   background-color: var(--container-color);
+  transition: var(--transition-300);
+
+  // Dark Mode
+  &.dark {
+    --container-color: #070e27;
+    --title-color: #fff;
+
+    .header__menu {
+      background-color: #0c183d;
+    }
+  }
 }
 
 ul,
