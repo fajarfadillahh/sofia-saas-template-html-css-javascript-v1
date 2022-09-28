@@ -211,3 +211,21 @@ img {
     right: 2rem;
   }
 }
+
+// ===== HOME SECTION =====
+.home {
+  &__container {
+    display: grid;
+    gap: 3rem;
+  }
+
+  &__data,
+  &__img {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__title {
+    font-size: 32px;
+  }
+}
