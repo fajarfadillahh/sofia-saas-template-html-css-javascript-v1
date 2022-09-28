@@ -261,3 +261,16 @@ img {
     width: 120px;
   }
 }
+
+// ===== MEDIA QUERIES =====
+// width 480px
+@media screen and (min-width: 480px) {
+  .home__text {
+    width: 400px;
+  }
+
+  .partner__group {
+    grid-template-columns: repeat(2, 140px);
+    justify-content: center;
+  }
+}
