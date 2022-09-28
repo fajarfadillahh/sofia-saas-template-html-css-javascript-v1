@@ -167,6 +167,7 @@ img {
     font-size: 20px;
     font-weight: var(--font-bold);
     color: var(--title-color);
+    transition: var(--transition-300);
 
     &-icon {
       width: 32px;
@@ -206,6 +207,7 @@ img {
     font-size: 15px;
     font-weight: var(--font-medium);
     color: var(--title-color);
+    transition: var(--transition-300);
   }
 
   &__button {
@@ -243,6 +245,7 @@ img {
 
   &__title {
     font-size: 32px;
+    transition: var(--transition-300);
   }
 }
 
