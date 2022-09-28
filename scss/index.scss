@@ -333,3 +333,25 @@ img {
     width: 460px;
   }
 }
+
+// width 1024px
+@media screen and (min-width: 1024px) {
+  .header {
+    &__list {
+      gap: 3rem;
+    }
+
+    &__link:hover {
+      color: var(--white-color);
+    }
+  }
+
+  .home__title {
+    font-size: 48px;
+  }
+
+  .partner__group {
+    grid-template-columns: repeat(5, 140px);
+    gap: 3rem;
+  }
+}
