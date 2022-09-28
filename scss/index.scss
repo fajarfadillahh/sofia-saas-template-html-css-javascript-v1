@@ -274,3 +274,14 @@ img {
     justify-content: center;
   }
 }
+
+// width 640px
+@media screen and (min-width: 640px) {
+  .home__text {
+    width: 450px;
+  }
+
+  .partner__group {
+    grid-template-columns: repeat(3, 140px);
+  }
+}
